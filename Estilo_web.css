@@ -163,7 +163,6 @@ div {
 } 
 * {
     box-sizing: border-box;
-    zoom: 0%;
 }
 #box {
     position: relative;
