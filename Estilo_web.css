@@ -33,7 +33,7 @@
     color: rgb(180, 180, 180);
 }
 #body_inicial {
-    background-image: url('1600w-4h1Zv5Jeojw.webp');
+    background-image: url('fundoSite.webp');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -47,7 +47,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('1600w-4h1Zv5Jeojw.webp');
+    background-image: url('fundoSite.webp');
     background-size: cover;
     background-position: center;
     filter: blur(10px);
@@ -154,7 +154,7 @@ div {
     }
 }
 #body_sobre{
-    background-image: url('1600w-4h1Zv5Jeojw.webp');
+    background-image: url('fundoSite.webp');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -164,13 +164,79 @@ div {
 * {
     box-sizing: border-box;
 }
-#box {
-    position: relative;
-    left: 860px;
-    bottom: 802px;
+#body_projeto {
+    background-image:url(fundoComputador.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding-top: 70px;
 }
-#title2 {
-    position: relative;
-    left: 860px;
-    bottom: 802px;
+#body_projeto::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fundoComputador.png');
+    background-size: cover;
+    background-position: center;
+}
+#title3 {
+    background-color: rgb(70,70,70,0.6);
+}
+#textProjeto {
+    padding: 10px;
+    margin: 30px;
+    max-width: 430px;
+    background: rgba(70, 70, 70, 0.6);
+    border-radius: 6px;
+    backdrop-filter: blur(5px);
+    color: azure;
+    font-family: sans-serif;
+    animation: fadeIn 2.5s ease-in-out;
+}
+.link {
+    text-decoration: none;
+    color: rgb(201, 191, 255);
+    font-style: italic;
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+.link:hover {
+    color: #969696;
+}
+.text_link {
+    padding: 15px;
+    margin: 30px;
+    max-width: 300px;
+    background: rgba(94, 94, 94, 0.6);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    color: azure;
+    font-family: sans-serif;
+    animation: fadeIn 2.5s ease-in-out;
+}
+#title4 {
+    background-color: rgb(70,70,70,0.6);
+}
+#body_contato {
+    background-image: url('fundoSite.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 70px;
+    overflow-x: hidden;
+}
+#textContato {
+    padding: 10px;
+    margin: 30px;
+    max-width: 300px;
+    background: rgba(70, 70, 70, 0.6);
+    border-radius: 6px;
+    backdrop-filter: blur(5px);
+    color: azure;
+    font-family: sans-serif;
+    animation: fadeIn 2.5s ease-in-out;
 }
