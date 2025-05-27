@@ -21,9 +21,26 @@
 }
 
 #homepage li {
-    margin: 0 15px;
+    margin: 0 50px;
+    font-size: large;
 }
-
+@media (max-width: 991px) {
+    #homepage li {
+        margin: 0 20px;
+        font-size: medium;
+    }
+}
+@media (max-width: 767px) {
+    #homepage li {
+        margin: 0 5px;
+        font-size: smaller;}
+    #assunto h2{
+        font-size: 7px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    }
 #homepage a {
     text-decoration: none;
     color: rgb(63, 65, 65);
@@ -84,7 +101,7 @@ main {
 #assunto h2 {
     text-align: center;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 18px;
     animation: fadeIn 2.5s ease-in-out;
 }
 
@@ -255,7 +272,7 @@ div {
 .text_link {
     padding: 10px;
     margin: 30px;
-    max-width: 350px;
+    max-width: 380px;
     background: rgba(94, 94, 94, 0.6);
     border-radius: 10px;
     backdrop-filter: blur(5px);
@@ -293,7 +310,7 @@ div {
     text-align: center;
 }
 p {
-    font-size: 18px;
+    font-size: 15px;
     font-family: sans-serif;
     animation: fadeIn 2.5s ease-in-out;
     color: azure;
