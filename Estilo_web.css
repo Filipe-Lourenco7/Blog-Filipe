@@ -1,3 +1,4 @@
+/* ====== NAVBAR FIXA ====== */
 #homepage {
     position: fixed;
     top: 0;
@@ -6,6 +7,7 @@
     background-color: rgb(248, 209, 209);
     padding: 20px 0;
     z-index: 1000;
+    overflow-x: auto;
 }
 
 #homepage ul {
@@ -14,10 +16,12 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    padding: 0 10px;
+    flex-wrap: wrap;
 }
 
 #homepage li {
-    margin: 0 30px;
+    margin: 0 15px;
 }
 
 #homepage a {
@@ -32,14 +36,18 @@
 #homepage a:hover {
     color: rgb(180, 180, 180);
 }
+
+/* ====== PÁGINA INICIAL ====== */
 #body_inicial {
     background-image: url('fundoSite.webp');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     padding-top: 70px;
-    overflow: y;
+    overflow: y; /* ⚠️ Provável erro de digitação. O correto seria: overflow-y: auto; */
 }
+
+/* Fundo desfocado da página inicial */
 #body_inicial::before {
     content: "";
     position: fixed;
@@ -53,6 +61,8 @@
     filter: blur(10px);
     z-index: -1;
 }
+
+/* Conteúdo principal */
 main {
     color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -60,6 +70,8 @@ main {
     padding: 20px;
     animation: slideIn 2.5s ease-in-out;
 }
+
+/* Seção de conteúdo com fundo escuro transparente */
 #assunto {
     max-width: 800px;
     margin: 40px auto;
@@ -83,6 +95,8 @@ main {
     text-align: center;
     animation: fadeIn 2.5s ease-in-out;
 }
+
+/* Botão padrão */
 button {
     margin: 20px;
     border-radius: 10%;
@@ -90,21 +104,33 @@ button {
     height: 40px;
     animation: slideIn 2.5s ease-in-out;
 }
+
 button:hover {
     color: black;
 }
+
+/* Estilo do select */
 select {
     height: 35px;
     width: 100px;
     border-radius: 10%;
 }
+
+/* Estilo das opções do select */
 option {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* Texto em geral dentro de divs */
 div {
     font-size: 18px;
+    font-family: sans-serif;
+    animation: fadeIn 2.5s ease-in-out;
+    color: azure;
 }
+
+/* Título com fundo escuro */
 .titulo {
     animation: slideIn 2.5s ease-in-out;
     max-width: 220px;
@@ -115,10 +141,12 @@ div {
     backdrop-filter: blur(5px);
     color: azure;
 }
+
+/* Bloco de texto com fundo roxo escuro */
 .text {
     padding: 20px;
     margin: 40px;
-    max-width: 675px;
+    max-width: 650px;
     background: rgba(51, 8, 49, 0.6);
     border-radius: 10px;
     backdrop-filter: blur(5px);
@@ -126,13 +154,17 @@ div {
     font-family: sans-serif;
     animation: fadeIn 2.5s ease-in-out;
 }
+
+/* Hover para link da aba */
 #link_aba:hover {
     color: rgb(102, 102, 102);
-
 }
+
 #link_aba {
     color: azure;
 }
+
+/* Animação fadeIn */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -143,6 +175,8 @@ div {
         transform: translateY(0);
     }
 }
+
+/* Animação slideIn */
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -153,24 +187,26 @@ div {
         transform: translateX(0);
     }
 }
-#body_sobre{
+
+/* Página Sobre */
+#body_sobre {
     background-image: url('fundoSite.webp');
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     padding-top: 70px;
     overflow-x: hidden;
-} 
-* {
-    box-sizing: border-box;
 }
+
+/* Página Projeto */
 #body_projeto {
-    background-image:url(fundoComputador.png);
+    background-image: url(fundoComputador.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     padding-top: 70px;
 }
+
 #body_projeto::before {
     content: "";
     position: fixed;
@@ -182,9 +218,13 @@ div {
     background-size: cover;
     background-position: center;
 }
+
+/* Estilo do título na página projeto */
 #title3 {
-    background-color: rgb(70,70,70,0.6);
+    background-color: rgba(70,70,70,0.6);
 }
+
+/* Texto explicativo dos projetos */
 #textProjeto {
     padding: 10px;
     margin: 30px;
@@ -196,6 +236,8 @@ div {
     font-family: sans-serif;
     animation: fadeIn 2.5s ease-in-out;
 }
+
+/* Link estilizado */
 .link {
     text-decoration: none;
     color: rgb(201, 191, 255);
@@ -204,13 +246,16 @@ div {
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
+
 .link:hover {
     color: #969696;
 }
+
+/* Bloco de texto com link */
 .text_link {
-    padding: 15px;
+    padding: 10px;
     margin: 30px;
-    max-width: 300px;
+    max-width: 350px;
     background: rgba(94, 94, 94, 0.6);
     border-radius: 10px;
     backdrop-filter: blur(5px);
@@ -218,9 +263,13 @@ div {
     font-family: sans-serif;
     animation: fadeIn 2.5s ease-in-out;
 }
+
+/* Título da seção de contato */
 #title4 {
-    background-color: rgb(70,70,70,0.6);
+    background-color: rgba(70,70,70,0.6);
 }
+
+/* Página Contato */
 #body_contato {
     background-image: url('fundoSite.webp');
     background-size: cover;
@@ -229,14 +278,23 @@ div {
     padding-top: 70px;
     overflow-x: hidden;
 }
+
+/* Bloco de texto da página de contato */
 #textContato {
     padding: 10px;
     margin: 30px;
-    max-width: 300px;
+    max-width: 350px;
     background: rgba(70, 70, 70, 0.6);
     border-radius: 6px;
     backdrop-filter: blur(5px);
     color: azure;
     font-family: sans-serif;
     animation: fadeIn 2.5s ease-in-out;
+    text-align: center;
+}
+p {
+    font-size: 18px;
+    font-family: sans-serif;
+    animation: fadeIn 2.5s ease-in-out;
+    color: azure;
 }
