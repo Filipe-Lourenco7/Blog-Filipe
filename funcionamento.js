@@ -1,8 +1,8 @@
 function resultado(mensagem, computador) {
-    const opcoes = ['Pedra 🗿', 'Papel 📄', 'Tesoura ✂️'];
+    const opcoes = ['Rock 🗿', 'Paper 📄', 'Scissors ✂️'];
     const resultadoDiv = document.getElementById("resultadoJogo");
     resultadoDiv.innerHTML = `
-        <p><strong>Computador escolheu:</strong> ${opcoes[computador]}</p>
+        <p><strong>Computer chose:</strong> ${opcoes[computador]}</p>
         <p><strong>${mensagem}</strong></p>
     `;
 }
@@ -18,12 +18,12 @@ function Jogar() {
     if ((computador == 0 && jogador == 2) ||
         (computador == 1 && jogador == 0) ||
         (computador == 2 && jogador == 1)) {
-        resultado("Perdeu!", computador);
+        resultado("You lost!", computador);
     }
     else if (computador == jogador) {
-        resultado("Empatou!", computador);
+        resultado("It's a tie!", computador);
     }
     else {
-        resultado("Sortudo, você Venceu!", computador);
+        resultado("Lucky! You won!", computador);
     }
 }
